@@ -79,18 +79,14 @@ class BinaryTree:
             return 0
         while q:
             #print(r.data, end=" ")
+            if q.empty():
+                return
             node = q.get(0)# 弹出第一个值
             print(node.data, end="")
             if node.left:  # 左子树判断
                 q.put(node.left)
             if node.right:  # 右子树判断
                 q.put(node.right)
-
-layer3_2 = BinaryTree(2,BinaryTree(7),BinaryTree(4))
-layer2_5 = BinaryTree(5,BinaryTree(6),layer3_2)
-layer2_1 = BinaryTree(1,BinaryTree(0),BinaryTree(8))
-layer1_3 = BinaryTree(3,layer2_5,layer2_1)
-layer1_3.layerorder()
 
 #实验4#
 class BinaryTree:
