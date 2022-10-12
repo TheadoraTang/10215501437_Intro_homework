@@ -1,19 +1,19 @@
 #实验1#
 import random
 import time
-#
-# def bubble_sort(lst):
-#     for i in range(1, len(lst)):
-#         for j in range(0, len(lst)-i):
-#             if lst[j] > lst[j+1]:
-#                 a = lst[j+1]
-#                 lst[j+1] = lst[j]
-#                 lst[j] = a
-#     return lst
-#
-# list1 = [5,9,8,6,5,2,4,1]
-# bubble_sort(list1)
-# print(list1)
+
+def bubble_sort(lst):
+    for i in range(1, len(lst)):
+        for j in range(0, len(lst)-i):
+            if lst[j] > lst[j+1]:
+                a = lst[j+1]
+                lst[j+1] = lst[j]
+                lst[j] = a
+    return lst
+
+list1 = [5,9,8,6,5,2,4,1]
+bubble_sort(list1)
+print(list1)
 
 #实验2#
 #选择排序#
